@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Codystar|Nova+Slim|Open+Sans|Fira+Mono');
-
 /*
 font-family: 'Codystar', cursive;
 font-family: 'Nova Slim', cursive;
@@ -54,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 p {
-  line-height: 1.5em;
+  line-height: 1.55em;
   text-align: left;
   hyphens: auto;
 }
@@ -120,12 +119,12 @@ li {
   text-align: center;
   margin-right: 3%;
 }
-ul{
+
+ul {
   padding: 0;
 }
 
 a, a:visited {
-
   color: rgb(66, 154, 112);
   text-decoration: none;
   font-family: 'Fira Mono', monospace;
@@ -169,7 +168,7 @@ label {
   display: inline-block;
 }
 
-#polyphonic {
+#ringtones {
   -moz-column-count: 3;
   -webkit-column-count: 3;
   column-count: 3;
@@ -189,6 +188,13 @@ label {
   padding: 10px;
 }
 
+#tones-screenshot {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  border: 2px solid rgb(66, 154, 112);
+}
+
 @media (max-width: 600px) {
   h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
@@ -201,11 +207,13 @@ label {
     border: 0px solid rgb(83, 138, 195);
     display: block;
     margin: 0 auto;
+    align-items: center;
   }
   #title {
     font-size: 66px;
+    padding-bottom: 2%;
   }
-  #polyphonic {
+  #ringtones {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
@@ -226,7 +234,7 @@ label {
     border: 3px solid rgb(235, 235, 235);
     padding: 0px;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 14px;
     transition: .3s;
   }
   li {
@@ -234,8 +242,9 @@ label {
     margin-right: 2%;
     text-transform: uppercase;
     display: inline-block;
+    padding: 3px;
   }
-  .nav-link::after{
+  .nav-link::after {
     content: '  |';
     color: rgb(66, 154, 112);
   }

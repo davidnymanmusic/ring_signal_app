@@ -3,7 +3,7 @@ import React from 'react'
 
 const Home = () =>
   <div>
-<h1>HELLO WORLD</h1>
+<h1>welcome</h1>
 
 <p>De nisi incididunt praetermissum, mandaremus e aute, elit laborum familiaritatem
   quo arbitror illum laboris. Iudicem velit illum quibusdam cillum, quamquam

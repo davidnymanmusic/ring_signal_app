@@ -1,10 +1,10 @@
 import React from 'react';
 import Audio from './Audio'
 
-const Polyphonic = () =>
+const Ringtones = () =>
 <div>
   <h1>melodies for mobile</h1>
-<div id="polyphonic">
+<div id="ringtones">
 <Audio label="Simple"/>
 <Audio label="Cool"/>
 <Audio label="Clean"/>
@@ -32,4 +32,4 @@ const Polyphonic = () =>
 </div>
 </div>
 
-export default Polyphonic
+export default Ringtones
