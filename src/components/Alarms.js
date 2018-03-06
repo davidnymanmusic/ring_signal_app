@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Audio from './Audio'
 
-class Notification extends Component {
+class Alarms extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,8 +13,9 @@ class Notification extends Component {
 
 
   async getData() {
-    const response = await fetch('https://ring-signal-server.herokuapp.com/ringtones/');
+    const response = await fetch('https://ring-signal-server.herokuapp.com/alarms/');
     const json = await response.json();
+    console.log(json);
     this.setState({
       data: json
     })
@@ -29,8 +30,8 @@ class Notification extends Component {
   }
   render() {
     return (<div>
-      <h1>customize your notifications</h1>
-      <div id="notifcation">
+      <h1>alarms for all</h1>
+      <div id="ringtones">
 
         <span>{this.renderTones()}</span>
 
@@ -38,4 +39,4 @@ class Notification extends Component {
     </div>)
   }
 }
-export default Notification
+export default Alarms
