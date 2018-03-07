@@ -239,16 +239,17 @@ label {
     margin: 10px;
   }
   label {
-    font-size: .6em;
+    font-size: .5em;
   }
   audio {
     border: 0px solid rgb(83, 138, 195);
     display: block;
     margin: 0 auto;
     align-items: center;
+    font-size: 10px;
   }
   #title {
-    font-size: 66px;
+    font-size: 60px;
     padding-bottom: 2%;
   }
   #ringtones {
