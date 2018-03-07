@@ -45,10 +45,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 3;
   border-bottom: 2px solid rgb(244, 244, 244);
 }
-a{
-  display: block;
+
+a {
   padding-bottom: 3px;
 }
+
+.links {
+  display: block;
+}
+
 /* hr {
   border: 0;
   height: 1px;
@@ -278,7 +283,7 @@ label {
     padding: 3px;
   }
   .nav-link::after {
-    content: '  |';
+    content: ' |';
     color: rgb(66, 154, 112);
   }
   #footer {
