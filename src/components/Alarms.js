@@ -5,7 +5,8 @@ class Alarms extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
+      fetched: false
     }
     this.getData = this.getData.bind(this)
     this.renderTones = this.renderTones.bind(this)
@@ -15,10 +16,11 @@ class Alarms extends Component {
   async getData() {
     const response = await fetch('https://ring-signal-server.herokuapp.com/alarms/');
     const json = await response.json();
-    console.log(json);
     this.setState({
-      data: json
+      data: json,
+      fetched: true
     })
+    console.log(this.state.fetched);
   }
   componentDidMount(){
     this.getData()
@@ -31,6 +33,7 @@ class Alarms extends Component {
   render() {
     return (<div>
       <h1>alarms for all</h1>
+      {!this.state.fetched ? <h2 id='load'>LOADING</h2>: null}
       <div id="ringtones">
 
         <span>{this.renderTones()}</span>

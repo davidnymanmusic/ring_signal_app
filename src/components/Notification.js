@@ -5,7 +5,8 @@ class Notification extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
+      fetched: false
     }
     this.getData = this.getData.bind(this)
     this.renderTones = this.renderTones.bind(this)
@@ -16,7 +17,8 @@ class Notification extends Component {
     const response = await fetch('https://ring-signal-server.herokuapp.com/ringtones/');
     const json = await response.json();
     this.setState({
-      data: json
+      data: json,
+      fetched: true
     })
   }
   componentDidMount(){
@@ -30,6 +32,7 @@ class Notification extends Component {
   render() {
     return (<div>
       <h1>customize your notifications</h1>
+      {!this.state.fetched ? <h2 id='load'>LOADING</h2>: null}
       <div id="notifcation">
 
         <span>{this.renderTones()}</span>

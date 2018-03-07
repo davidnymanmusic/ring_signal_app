@@ -233,6 +233,24 @@ label {
   vertical-align: text-top;
 }
 
+#load{
+  background: url('https://media.giphy.com/media/4BHJ1gQrfQNyg/giphy.gif');
+  background-size: contain;
+  background-position: 0 0;
+  font-size: 2.5em;
+  text-align: center;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  filter: brightness(1.6) contrast(.68);
+  transition: .2s;
+  background-blend-mode: color;
+}
+
 @media (max-width: 600px) {
   h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
