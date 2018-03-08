@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Audio = ({label = 'Label', mp3link = "http://k003.kiwi6.com/hotlink/niv84ax9uw/TREKKIN.mp3" }) =>
+const Audio = ({label = 'Label', mp3link = "http://k003.kiwi6.com/hotlink/mx3gimwmup/glass_01.mp3" }) =>
 <div>
   <div id="player">
     <label>{label}</label>

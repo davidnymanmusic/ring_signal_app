@@ -16,10 +16,13 @@ class Notification extends Component {
   async getData() {
     const response = await fetch('https://ring-signal-server.herokuapp.com/ringtones/');
     const json = await response.json();
-    this.setState({
-      data: json,
-      fetched: true
-    })
+    setTimeout(() => {
+      this.setState({
+        data: json,
+        fetched: true
+      })
+}, 900)
+
   }
   componentDidMount(){
     this.getData()
@@ -30,7 +33,7 @@ class Notification extends Component {
     )
   }
   render() {
-    return (<div>
+    return (<div id="notifcation-page">
       <h1>customize your notifications</h1>
       {!this.state.fetched ? <h2 id='load'>LOADING</h2>: null}
       <div id="notifcation">

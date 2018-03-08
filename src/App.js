@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div className="main">
         <Body title="Ring Signal"/>
-
           <Footer />
       </div>
     );

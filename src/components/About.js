@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const About = () =>
-<div>
+<div id="about">
   <h3>more info</h3>
 
 <p className='instructions'>Q3 project for Galvanize Web Development Immersive</p>

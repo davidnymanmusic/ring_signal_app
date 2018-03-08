@@ -16,10 +16,12 @@ class Alarms extends Component {
   async getData() {
     const response = await fetch('https://ring-signal-server.herokuapp.com/alarms/');
     const json = await response.json();
-    this.setState({
-      data: json,
-      fetched: true
-    })
+    setTimeout(() => {
+      this.setState({
+        data: json,
+        fetched: true
+      })
+}, 900)
     console.log(this.state.fetched);
   }
   componentDidMount(){
@@ -31,7 +33,7 @@ class Alarms extends Component {
     )
   }
   render() {
-    return (<div>
+    return (<div id="alarm-page">
       <h1>alarms for all</h1>
       {!this.state.fetched ? <h2 id='load'>LOADING</h2>: null}
       <div id="ringtones">

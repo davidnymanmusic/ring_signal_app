@@ -18,7 +18,6 @@ const Body = ({title = 'cool title'}) =>
     <li className="nav-link"><Link to='/notifcation'>notifcation</Link></li>
     <li><Link to='/about'>about</Link></li>
   </ul>
-  {/* <hr></hr> */}
 </div>
 
 <div id="separator"></div>

@@ -5,21 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
   <title>〰️ Ring Signal 〰️</title>
   <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-icon-60x60.png">
@@ -62,6 +50,7 @@
     const strokeWidth = .5;
     const strokeColor = 'rgba(91, 193, 92, 1)';
 
+
     const canvas = document.querySelector('#squig');
     paper.setup(canvas);
     const view = paper.view;
@@ -88,10 +77,14 @@
     }
   </script>
   <style>
+  *{
+  }
     #squig {
       margin: 0 auto;
-      padding: 0;
+      padding-top: 5%;
+      animation: slow 4s ease-out;
     }
+
 
     canvas {
       padding-left: 0;
@@ -102,6 +95,24 @@
       margin-top: 0;
       display: block;
       width: 90%;
+    }
+
+    #root {
+      margin: 0;
+      padding: 0;
+      animation: slow 1s ease-out;
+    }
+
+    @keyframes slow {
+      0% {
+        opacity: 0;
+      }
+      55% {
+        opacity: .7;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 </body>
