@@ -15,7 +15,7 @@ const Body = ({title = 'cool title'}) =>
   <ul>
     <li className="nav-link"><Link to='/install'>install</Link></li>
     <li className="nav-link"><Link to='/alarms'>alarms</Link></li>
-    <li className="nav-link"><Link to='/notifcation'>notifcation</Link></li>
+    <li className="nav-link"><Link to='/notification'>notification</Link></li>
     <li><Link to='/about'>about</Link></li>
   </ul>
 </div>
@@ -25,7 +25,7 @@ const Body = ({title = 'cool title'}) =>
   <Route path='/install' component={Install}/>
   <Route path='/about' component={About}/>
   <Route path='/alarms' component={Alarms}/>
-  <Route path='/notifcation' component={Notification}/>
+  <Route path='/notification' component={Notification}/>
   <Route path='/' component={Home}/>
 </Switch>
 </div>
