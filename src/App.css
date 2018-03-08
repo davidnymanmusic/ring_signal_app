@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2%;
   z-index: 3;
   border-bottom: 2px solid rgb(244, 244, 244);
-    animation: slow .8s ease-out;
+  animation: slow .8s ease-out;
 }
 
 .links {
@@ -102,6 +102,7 @@ p {
   list-style: none;
   display: block;
   text-align: center;
+    font-size: 1.3em;
 }
 
 li {
@@ -122,6 +123,7 @@ a, a:visited {
   font-family: 'Fira Mono', monospace;
   transition: .3s;
   padding-bottom: 3px;
+
 }
 
 a:active {
