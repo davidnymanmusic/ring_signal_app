@@ -175,7 +175,7 @@ label {
   animation: slow .7s ease-out;
 }
 
-#notifcation {
+#notification {
   -moz-column-count: 3;
   -webkit-column-count: 3;
   column-count: 3;
@@ -199,7 +199,7 @@ label {
   animation: slow .7s ease-out;
 }
 
-#notifcation-page {
+#notification-page {
   animation: slow .7s ease-out;
 }
 
@@ -332,7 +332,7 @@ label {
     min-width: 100px;
     animation: 1s slow;
   }
-  #notifcation {
+  #notification {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;

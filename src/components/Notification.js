@@ -33,10 +33,10 @@ class Notification extends Component {
     )
   }
   render() {
-    return (<div id="notifcation-page">
+    return (<div id="notification-page">
       <h1>customize your notifications</h1>
       {!this.state.fetched ? <h2 id='load'>LOADING</h2>: null}
-      <div id="notifcation">
+      <div id="notification">
 
         <span>{this.renderTones()}</span>
 
