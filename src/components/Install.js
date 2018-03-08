@@ -10,9 +10,9 @@ const Install = () => <div id="install">
   <br></br>
   <h4>Downloads</h4>
   <br></br>
-  <a href="./public/rs-alarms-m4r.zip" download="download">Alarms</a>
+  <a href="http://www.filehosting.org/file/details/728764/rs-alarms-m4r.zip" download="download">Alarms</a>
   <br></br>
-  <a href="./public/rs-notifications-m4r.zip" download="download">Notifications</a>
+  <a href="http://www.filehosting.org/file/details/728765/rs-notification-m4r.zip" download="download">Notifications</a>
   <p className='instructions'>Unzip the compressed files and then drag and drop whichever .m4r files you would like.</p>
   <p className='instructions'>Each file is also available to download as an .mp3</p>
   <img id='audio-html' src='https://i.imgur.com/ItP1bcI.png' title='download by clicking the downward arrow' alt=''></img>
